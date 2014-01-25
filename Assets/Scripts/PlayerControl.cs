@@ -24,19 +24,22 @@ public class PlayerControl : MonoBehaviour
 	private Animator anim;					// Reference to the player's animator component.
 
 
+	private Animator animator;
 
 	void Awake()
 	{
 		// Setting up references.
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
+
+		anim.speed = 0.5f;
 	}
 
 
 	void Update()
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+//		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if(Input.GetButtonDown("Jump") )//&& grounded)
@@ -51,7 +54,29 @@ public class PlayerControl : MonoBehaviour
 		float v = Input.GetAxis("Vertical");
 
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
-		anim.SetFloat("Speed", Mathf.Abs(h));
+//		anim.SetFloat("Speed", Mathf.Abs(h));
+
+		if (v > 0)
+		{
+			//anim.SetInteger("Direction", 0);
+
+			anim.Play("walk_up");
+		}
+		else if (v < 0)
+		{
+			anim.Play("walk_down");
+			//anim.SetInteger("Direction", 2);
+		}
+		else if (h > 0)
+		{
+			anim.Play("walk_right");
+			//anim.SetInteger("Direction", 1);
+		}
+		else if (h < 0)
+		{
+			anim.Play("walk_left");
+			//anim.SetInteger("Direction", 3);
+		}
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * rigidbody2D.velocity.x < maxSpeed)
