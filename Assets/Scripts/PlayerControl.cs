@@ -23,9 +23,6 @@ public class PlayerControl : MonoBehaviour
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
-
-	private Animator animator;
-
 	void Awake()
 	{
 		// Setting up references.
