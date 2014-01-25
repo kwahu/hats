@@ -31,8 +31,9 @@ public class PlayerHealth : MonoBehaviour
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		// If the colliding gameobject is an Enemy...
-		if(col.gameObject.tag == "Enemy")
+		if(col.gameObject.tag == "EnemyBullets")
 		{
+		/*	Debug.Log("TAKING DAMAGE");
 			// ... and if the time exceeds the time of the last hit plus the time between hits...
 			if (Time.time > lastHitTime + repeatDamagePeriod) 
 			{
@@ -69,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
 					// ... Trigger the 'Die' animation state
 					anim.SetTrigger("Die");
 				}
-			}
+			}*/
 		}
 	}
 

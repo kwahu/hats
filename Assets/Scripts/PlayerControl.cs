@@ -25,10 +25,13 @@ public class PlayerControl : MonoBehaviour
 		private bool grounded = false;			// Whether or not the player is grounded.
 		private Animator anim;					// Reference to the player's animator component.
 
+	public GameObject rocket;				// Prefab of the rocket.
+	public float bulletSpeed = 20f;				// The speed the rocket will fire at.
+	
+
+
 		void Awake ()
 		{
-				// Setting up references.
-				groundCheck = transform.Find ("groundCheck");
 				anim = GetComponent<Animator> ();
 
 				anim.speed = 0.5f;
@@ -36,12 +39,12 @@ public class PlayerControl : MonoBehaviour
 
 		void Update ()
 		{
-				// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-//		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
-
-				// If the jump button is pressed and the player is grounded then the player should jump.
 				if (Input.GetButtonDown ("Jump"))//&& grounded)
 						jump = true;
+
+		if(Input.GetButtonDown("Fire1"))
+				FireBullet ();
+
 		}
 
 		void FixedUpdate ()
@@ -49,7 +52,6 @@ public class PlayerControl : MonoBehaviour
 				float h = Input.GetAxis ("Horizontal");
 				float v = Input.GetAxis ("Vertical");
 
-//		anim.SetFloat("Speed", Mathf.Abs(h));
 
 				if (v > 0)
 						anim.Play ("walk_up");
@@ -68,7 +70,57 @@ public class PlayerControl : MonoBehaviour
 
 
 
-				// If the player should jump...
+	
+		}
+
+	void FireBullet()
+	{
+		GameObject obj = (GameObject)Instantiate (Resources.Load ( "bullet_player"), transform.position ,Quaternion.Euler (0, 0, 0));
+		//obj.layer = LayerMask.NameToLayer("Bullets");
+		obj.rigidbody2D.AddForce( rigidbody2D.velocity.normalized * 1000 );
+	}
+
+
+
+
+
+
+	public IEnumerator Taunt ()
+	{
+		// Check the random chance of taunting.
+		float tauntChance = Random.Range (0f, 100f);
+		if (tauntChance > tauntProbability) {
+			// Wait for tauntDelay number of seconds.
+			yield return new WaitForSeconds (tauntDelay);
+			
+			// If there is no clip currently playing.
+			if (!audio.isPlaying) {
+				// Choose a random, but different taunt.
+				tauntIndex = TauntRandom ();
+				
+				// Play the new taunt.
+				audio.clip = taunts [tauntIndex];
+				audio.Play ();
+			}
+		}
+	}
+	
+	int TauntRandom ()
+	{
+		// Choose a random index of the taunts array.
+		int i = Random.Range (0, taunts.Length);
+		
+		// If it's the same as the previous taunt...
+		if (i == tauntIndex)
+			// ... try another random taunt.
+			return TauntRandom ();
+		else
+			// Otherwise return this index.
+			return i;
+	}
+
+	/*
+	 * 			// If the player should jump...
 				if (jump) {
 						// Set the Jump animator trigger parameter.
 						anim.SetTrigger ("Jump");
@@ -83,39 +135,6 @@ public class PlayerControl : MonoBehaviour
 						// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 						jump = false;
 				}
-		}
 
-		public IEnumerator Taunt ()
-		{
-				// Check the random chance of taunting.
-				float tauntChance = Random.Range (0f, 100f);
-				if (tauntChance > tauntProbability) {
-						// Wait for tauntDelay number of seconds.
-						yield return new WaitForSeconds (tauntDelay);
-
-						// If there is no clip currently playing.
-						if (!audio.isPlaying) {
-								// Choose a random, but different taunt.
-								tauntIndex = TauntRandom ();
-
-								// Play the new taunt.
-								audio.clip = taunts [tauntIndex];
-								audio.Play ();
-						}
-				}
-		}
-
-		int TauntRandom ()
-		{
-				// Choose a random index of the taunts array.
-				int i = Random.Range (0, taunts.Length);
-
-				// If it's the same as the previous taunt...
-				if (i == tauntIndex)
-			// ... try another random taunt.
-						return TauntRandom ();
-				else
-			// Otherwise return this index.
-						return i;
-		}
+*/
 }
