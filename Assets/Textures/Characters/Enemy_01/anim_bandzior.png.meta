@@ -49,7 +49,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 128
+        y: 292
         width: 21
         height: 35
       alignment: 0
@@ -57,8 +57,8 @@ TextureImporter:
     - name: anim_bandzior_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 127
+        x: 42
+        y: 291
         width: 19
         height: 36
       alignment: 0
@@ -66,8 +66,8 @@ TextureImporter:
     - name: anim_bandzior_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 128
+        x: 78
+        y: 292
         width: 21
         height: 35
       alignment: 0
@@ -75,8 +75,8 @@ TextureImporter:
     - name: anim_bandzior_3
       rect:
         serializedVersion: 2
-        x: 111
-        y: 127
+        x: 114
+        y: 291
         width: 19
         height: 36
       alignment: 0
@@ -85,7 +85,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 87
+        y: 251
         width: 20
         height: 36
       alignment: 0
@@ -93,8 +93,8 @@ TextureImporter:
     - name: anim_bandzior_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 88
+        x: 42
+        y: 252
         width: 24
         height: 35
       alignment: 0
@@ -102,8 +102,8 @@ TextureImporter:
     - name: anim_bandzior_6
       rect:
         serializedVersion: 2
-        x: 76
-        y: 87
+        x: 78
+        y: 251
         width: 20
         height: 36
       alignment: 0
@@ -111,8 +111,8 @@ TextureImporter:
     - name: anim_bandzior_7
       rect:
         serializedVersion: 2
-        x: 107
-        y: 88
+        x: 114
+        y: 252
         width: 25
         height: 35
       alignment: 0
@@ -121,7 +121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 47
+        y: 210
         width: 21
         height: 36
       alignment: 0
@@ -129,8 +129,8 @@ TextureImporter:
     - name: anim_bandzior_9
       rect:
         serializedVersion: 2
-        x: 41
-        y: 46
+        x: 42
+        y: 209
         width: 19
         height: 37
       alignment: 0
@@ -138,8 +138,8 @@ TextureImporter:
     - name: anim_bandzior_10
       rect:
         serializedVersion: 2
-        x: 76
-        y: 47
+        x: 77
+        y: 210
         width: 21
         height: 36
       alignment: 0
@@ -147,8 +147,8 @@ TextureImporter:
     - name: anim_bandzior_11
       rect:
         serializedVersion: 2
-        x: 111
-        y: 46
+        x: 114
+        y: 209
         width: 19
         height: 37
       alignment: 0
@@ -156,8 +156,8 @@ TextureImporter:
     - name: anim_bandzior_12
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
+        x: 6
+        y: 167
         width: 20
         height: 38
       alignment: 0
@@ -165,8 +165,8 @@ TextureImporter:
     - name: anim_bandzior_13
       rect:
         serializedVersion: 2
-        x: 38
-        y: 8
+        x: 42
+        y: 169
         width: 24
         height: 35
       alignment: 0
@@ -174,8 +174,8 @@ TextureImporter:
     - name: anim_bandzior_14
       rect:
         serializedVersion: 2
-        x: 74
-        y: 7
+        x: 78
+        y: 169
         width: 20
         height: 36
       alignment: 0
@@ -183,10 +183,190 @@ TextureImporter:
     - name: anim_bandzior_15
       rect:
         serializedVersion: 2
-        x: 109
-        y: 8
+        x: 114
+        y: 170
         width: 24
         height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 128
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 128
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 128
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_20
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 128
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_24
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 46
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 46
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 46
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_29
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 46
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_30
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 46
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_31
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_32
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_33
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 3
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
