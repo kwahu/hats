@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 1d2f44f3b39b2c24aa7a236797153274
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: anim_bandzior2_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 127
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 128
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 127
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 88
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 87
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 88
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 47
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 46
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 47
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 46
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 8
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 7
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_bandzior2_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 8
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
