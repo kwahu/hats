@@ -38,6 +38,24 @@ Transition:
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
+--- !u!1101 &110102243
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110218295}
+  m_DstState: {fileID: 110200000}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
 --- !u!1101 &110108005
 Transition:
   m_ObjectHideFlags: 3
@@ -46,6 +64,24 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110296772}
   m_DstState: {fileID: 110203056}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110116078
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110269554}
+  m_DstState: {fileID: 110276505}
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
@@ -74,6 +110,24 @@ Transition:
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
+--- !u!1101 &110150853
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110228456}
+  m_DstState: {fileID: 110238064}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
 --- !u!1101 &110164180
 Transition:
   m_ObjectHideFlags: 3
@@ -82,6 +136,24 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110276505}
   m_DstState: {fileID: 110218569}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110167847
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110244085}
+  m_DstState: {fileID: 110296772}
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
@@ -296,6 +368,22 @@ StateMachine:
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
+    data:
+      first: {fileID: 110269554}
+      second:
+      - {fileID: 110116078}
+    data:
+      first: {fileID: 110228456}
+      second:
+      - {fileID: 110150853}
+    data:
+      first: {fileID: 110244085}
+      second:
+      - {fileID: 110167847}
+    data:
+      first: {fileID: 110218295}
+      second:
+      - {fileID: 110102243}
     data:
       first: {fileID: 110296772}
       second:
