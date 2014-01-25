@@ -18,17 +18,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300036, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
+      value: {fileID: 21300018, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
     - time: .0833333358
-      value: {fileID: 21300038, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
+      value: {fileID: 21300020, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
     - time: .166666672
-      value: {fileID: 21300040, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
+      value: {fileID: 21300022, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
     - time: .25
-      value: {fileID: 21300042, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
+      value: {fileID: 21300024, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
     - time: .333333343
-      value: {fileID: 21300044, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
-    - time: .416666657
-      value: {fileID: 21300046, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
+      value: {fileID: 21300026, guid: b6a8490ce0935b040a900da9d417945c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -41,7 +39,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .5
+    m_StopTime: .416666687
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
