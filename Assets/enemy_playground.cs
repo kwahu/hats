@@ -1,43 +1,98 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemy_playground : MonoBehaviour {
-
+public class enemy_playground : MonoBehaviour
+{
 	
-	private Animator anim;
+		private Animator anim;
+		public bool ShouldFollowPlayerOnSight = true;
+		public bool ShouldShootPlayerOnSight = true;
+		public bool ShouldRunFromPlayerOnSight = false;
+		float speed = 10;
+		float delayMax = 3;
+		float delayMin = 1;
+		float delay = 0;
+		Vector2 direction;
+		bool sawPlayer = false;
+		GameObject player;
 
+		public void SawPlayer (bool set)
+		{
+			sawPlayer = set;
+		}
 
-	void Awake()
+		void Awake ()
+		{
+				anim = GetComponent<Animator> ();
+				anim.speed = 0.5f;
+				player = GameObject.Find ("Player");
+		}
+
+		void Update ()
+		{
+				Animate ();
+
+				if (ShouldFollowPlayerOnSight && sawPlayer)
+						Follow ();
+				else if (ShouldRunFromPlayerOnSight && sawPlayer)
+						RunAway();
+				else
+						Move ();
+		}
+
+		void Follow ()
+		{
+			sawPlayer = false;
+
+				rigidbody2D.AddForce ((player.transform.position - this.transform.position) * speed);
+		}
+
+	void RunAway ()
 	{
-		// Setting up references.
-		groundCheck = transform.Find("groundCheck");
-		anim = GetComponent<Animator>();
+			sawPlayer = false;
 		
-		anim.speed = 0.5f;
+		rigidbody2D.AddForce (-(player.transform.position - this.transform.position) * speed);
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		Vector2 vec = new Vector2(Random.Range(0,1),Random.Range(0,1)); 
-		rigidbody2D.AddForce(vec);
+		void Move ()
+		{
+				delay -= Time.deltaTime;
+
+				if (delay < 0)
+						ChangeDirection ();
+
+				rigidbody2D.AddForce (direction * speed);
+		}
+
+		void ChangeDirection ()
+		{
+				direction = new Vector2 (Random.Range (-1f, 1f), Random.Range (-1f, 1f)); 
+				direction.Normalize ();
+				delay = Random.Range (delayMin, delayMax);
+		}
+
+		void Animate ()
+		{
+				if (rigidbody2D.velocity.normalized.y < 0) {
+						anim.Play ("walk_up");
+				} else if (rigidbody2D.velocity.normalized.y > 0) {
+						anim.Play ("walk_down");
+				} else if (rigidbody2D.velocity.normalized.x > 0) {
+						anim.Play ("walk_right");
+				} else if (rigidbody2D.velocity.normalized.x < 0) {
+						anim.Play ("walk_left");
+				}
+		}
+
+		void OnCollisionEnter2D (Collision2D coll)
+		{
+				ChangeDirection ();
+		}
+
+		void OnCollisionStay2D (Collision2D coll)
+		{
+				ChangeDirection ();
+		}
 
 
-		if (rigidbody2D.velocity.normalized.y < 0)
-		{
-			anim.Play("walk_up");
-		}
-		else if (rigidbody2D.velocity.normalized.y > 0)
-		{
-			anim.Play("walk_down");
-		}
-		else if (rigidbody2D.velocity.normalized.x > 0)
-		{
-			anim.Play("walk_right");
-		}
-		else if (rigidbody2D.velocity.normalized.x < 0)
-		{
-			anim.Play("walk_left");
-		}
-	}
 }
