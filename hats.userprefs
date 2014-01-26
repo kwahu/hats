@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Splash.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerControl.cs" Line="32" Column="19" />
-      <File FileName="Assets\Bullet.cs" Line="8" Column="34" />
-      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="97" Column="3" />
-      <File FileName="Assets\enemy_playground.cs" Line="53" Column="1" />
+      <File FileName="Assets\Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="45" Column="4" />
+      <File FileName="Assets\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemy_playground.cs" Line="1" Column="1" />
+      <File FileName="Assets\SpriteOrdering.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
