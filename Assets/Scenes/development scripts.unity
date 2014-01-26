@@ -655,8 +655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
   moveForce: 365
   maxSpeed: 3
   jumpClips: []
@@ -4440,7 +4438,6 @@ MonoBehaviour:
   - {fileID: 21300002, guid: 7d8f9fe452c175b43920fa4aa7af3188, type: 3}
   - {fileID: 0}
   sound: []
-  slideNum: 0
   started: 0
   dialogPoster: {fileID: 0}
 --- !u!1 &1049173827

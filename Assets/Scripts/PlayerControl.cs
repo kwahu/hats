@@ -3,12 +3,12 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-		[HideInInspector]
-		public bool
-				facingRight = true;			// For determining which way the player is currently facing.
-		[HideInInspector]
-		public bool
-				jump = false;				// Condition for whether the player should jump.
+		//[HideInInspector]
+		//public bool
+		//		facingRight = true;			// For determining which way the player is currently facing.
+		//[HideInInspector]
+		//public bool
+		//		jump = false;				// Condition for whether the player should jump.
 
 
 		public float moveForce = 365f;			// Amount of force added to move the player left and right.
@@ -21,8 +21,8 @@ public class PlayerControl : MonoBehaviour
 
 
 		private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
-		private Transform groundCheck;			// A position marking where to check if the player is grounded.
-		private bool grounded = false;			// Whether or not the player is grounded.
+		//private Transform groundCheck;			// A position marking where to check if the player is grounded.
+		//private bool grounded = false;			// Whether or not the player is grounded.
 		private Animator anim;					// Reference to the player's animator component.
 
 		public GameObject rocket;				// Prefab of the rocket.
@@ -150,7 +150,7 @@ public class PlayerControl : MonoBehaviour
 				obj.rigidbody2D.AddForce (new Vector2 (0, -100));
 		}
 	
-		public IEnumerator Taunt ()
+	/*	public IEnumerator Taunt ()
 		{
 				// Check the random chance of taunting.
 				float tauntChance = Random.Range (0f, 100f);
@@ -182,7 +182,7 @@ public class PlayerControl : MonoBehaviour
 				else
 			// Otherwise return this index.
 						return i;
-		}
+		}*/
 
 		/*
 	 * 			// If the player should jump...

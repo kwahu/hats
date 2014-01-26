@@ -5,7 +5,7 @@ public class Dialog : MonoBehaviour {
 
 	public Sprite[] text;
 	public AudioSource[] sound;
-	public int slideNum = 0;
+	int slideNum = -1;
 	public bool started = false;
 	public GameObject dialogPoster;
 
