@@ -36,5 +36,7 @@ public class Splash : MonoBehaviour
 						_splashTint.a = Mathf.Lerp (1.0f, 0.0f, _time);
 				}
 				_splashMaterial.color = _splashTint;
+
+
 		}
 }
