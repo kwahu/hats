@@ -274,8 +274,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.06999993, y: 1.49000001}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.06999993, y: .5}
+  m_Center: {x: 0, y: -.300000012}
 --- !u!212 &48038301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -387,8 +387,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.06999993, y: 1.49000001}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.06999993, y: .600000024}
+  m_Center: {x: 0, y: -.300000012}
 --- !u!212 &86428840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -741,7 +741,7 @@ Animator:
   m_GameObject: {fileID: 270314458}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 83450733ede24bb4a9f6c9598324ab63, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2c7315093beff21419f024631e3bbdb6, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
@@ -767,7 +767,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 10
   m_SortingLayerID: 2511236001
-  m_Sprite: {fileID: 21300000, guid: b095b4cec0eb15c409b5309b7d00a5e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 654f2363994d4884ea2878f00ceedf6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &270314461
 Transform:
