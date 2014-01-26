@@ -29,12 +29,10 @@ public class PlayerControl : MonoBehaviour
 		public float bulletSpeed = 20f;				// The speed the rocket will fire at.
 
 		public bool playerIsDriving = false;
-	float speed = 150;
-	 float rotationSpeed = 5;
-
-	public float angle;
-
-	public GameObject direction;
+		float speed = 150;
+		float rotationSpeed = 5;
+		public float angle;
+		public GameObject direction;
 
 		void Awake ()
 		{
@@ -42,18 +40,12 @@ public class PlayerControl : MonoBehaviour
 
 				anim.speed = 0.5f;
 
-		if(playerIsDriving) transform.GetChild(0).gameObject.SetActive(true);
-
-//				myTrans = transform;
-			//	myPos = myTrans.position;
-			//	myRot = myTrans.rotation.eulerAngles;
+				if (playerIsDriving)
+						transform.GetChild (0).gameObject.SetActive (true);
 		}
 
 		void Update ()
 		{
-				//if (Input.GetButtonDown ("Jump"))//&& grounded)
-				//		jump = true;
-
 				if (Input.GetButtonDown ("Fire1"))
 						FireBullet ();
 
@@ -64,9 +56,6 @@ public class PlayerControl : MonoBehaviour
 				float h = Input.GetAxis ("Horizontal");
 				float v = Input.GetAxis ("Vertical");
 
-
-
-			
 				if (playerIsDriving)
 						Driving (h, v);
 				else
@@ -75,16 +64,16 @@ public class PlayerControl : MonoBehaviour
 
 		void Walking (float h, float v)
 		{
-		if (v > 0)
-			anim.Play ("walk_up");
-		else if (v < 0)
-			anim.Play ("walk_down");
-		else if (h > 0)
-			anim.Play ("walk_right");
-		else if (h < 0)
-			anim.Play ("walk_left");
+				if (v > 0)
+						anim.Play ("walk_up");
+				else if (v < 0)
+						anim.Play ("walk_down");
+				else if (h > 0)
+						anim.Play ("walk_right");
+				else if (h < 0)
+						anim.Play ("walk_left");
 
-		if (h * rigidbody2D.velocity.x < maxSpeed)
+				if (h * rigidbody2D.velocity.x < maxSpeed)
 						rigidbody2D.AddForce (Vector2.right * h * moveForce);
 		
 				if (v * rigidbody2D.velocity.y < maxSpeed)
@@ -93,31 +82,31 @@ public class PlayerControl : MonoBehaviour
 		
 		void Driving (float h, float v)
 		{
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			direction.transform.Rotate(new Vector3(0,0,1), -rotationSpeed);
+				if (Input.GetKey (KeyCode.RightArrow)) {
+						direction.transform.Rotate (new Vector3 (0, 0, 1), -rotationSpeed);
+				}
+				if (Input.GetKey (KeyCode.LeftArrow)) {
+						direction.transform.Rotate (new Vector3 (0, 0, 1), rotationSpeed);
+				}
+
+				float dir = direction.transform.eulerAngles.z;
+
+				Vector2 vec = new Vector2 (-Mathf.Sin (dir * Mathf.Deg2Rad) * speed, Mathf.Cos (dir * Mathf.Deg2Rad) * speed);
+				this.rigidbody2D.AddForce (vec);
+
+				Debug.Log (dir);
+				if (dir > 315 || dir < 45)
+						anim.Play ("walk_up");
+				else if (dir > 135 && dir < 225)
+						anim.Play ("walk_down");
+				else if (dir > 45 && dir < 135)
+						anim.Play ("walk_left");
+				else if (dir > 225 && dir < 315)
+						anim.Play ("walk_right");
+
 		}
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			direction.transform.Rotate(new Vector3(0,0,1), rotationSpeed);
-		}
-
-		float dir = direction.transform.eulerAngles.z;
-
-		Vector2 vec = new Vector2(-Mathf.Sin(dir*Mathf.Deg2Rad) * speed,  Mathf.Cos(dir*Mathf.Deg2Rad) * speed);
-		this.rigidbody2D.AddForce(vec);
-
-		Debug.Log(dir);
-		if (dir > 315 || dir < 45)
-			anim.Play ("walk_up");
-		else if (dir > 135 && dir < 225)
-			anim.Play ("walk_down");
-		else if (dir > 45 && dir < 135)
-			anim.Play ("walk_left");
-		else if (dir > 225 && dir < 315)
-			anim.Play ("walk_right");
-
-	}
 	
-	void FireBullet ()
+		void FireBullet ()
 		{
 				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
 				//obj.layer = LayerMask.NameToLayer("Bullets");
