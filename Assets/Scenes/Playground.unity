@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveForce: 365
-  maxSpeed: 3
+  maxSpeed: 5
   jumpClips: []
   jumpForce: 1000
   taunts: []

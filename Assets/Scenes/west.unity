@@ -805,7 +805,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230446310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.554657, y: 34.4739647, z: 0}
+  m_LocalPosition: {x: 34.466938, y: 34.4739647, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveForce: 365
-  maxSpeed: 3
+  maxSpeed: 5
   jumpClips: []
   jumpForce: 1000
   taunts: []
@@ -2441,6 +2441,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 421790998}
   - 212: {fileID: 421790997}
+  - 61: {fileID: 421790999}
   m_Layer: 0
   m_Name: west_assets_5
   m_TagString: Untagged
@@ -2482,6 +2483,17 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &421790999
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421790996}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .289999992, y: .239999995}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &452170902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7801,6 +7813,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1707307472}
   - 212: {fileID: 1707307471}
+  - 61: {fileID: 1707307473}
   m_Layer: 0
   m_Name: west_assets_6
   m_TagString: Untagged
@@ -7842,6 +7855,17 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1707307473
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1707307470}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .430000007, y: .439999998}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1713935587
 GameObject:
   m_ObjectHideFlags: 0

@@ -203,8 +203,10 @@ public class enemy_playground : MonoBehaviour
 		{
 				ChangeDirection ();
 
-				if (coll.gameObject.layer == LayerMask.NameToLayer ("PlayerBullets"))
+				if (coll.gameObject.layer == LayerMask.NameToLayer ("PlayerBullets")) {
+						Camera.main.GetComponent<gameController>().targets -= 1;
 						Destroy (this.gameObject);
+				}
 		}
 
 		void OnCollisionStay2D (Collision2D coll)
