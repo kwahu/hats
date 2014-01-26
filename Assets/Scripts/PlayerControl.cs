@@ -98,7 +98,7 @@ public class PlayerControl : MonoBehaviour
 				Vector2 vec = new Vector2 (-Mathf.Sin (dir * Mathf.Deg2Rad) * speed, Mathf.Cos (dir * Mathf.Deg2Rad) * speed);
 				this.rigidbody2D.AddForce (vec);
 
-				Debug.Log (dir);
+				//Debug.Log (dir);
 				if (dir > 315 || dir < 45)
 						anim.Play ("walk_up");
 				else if (dir > 135 && dir < 225)

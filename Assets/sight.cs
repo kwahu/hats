@@ -5,7 +5,6 @@ public class sight : MonoBehaviour {
 
 	public float sight_dist = 3;
 
-
 	// Use this for initialization
 	void Start () {
 	
