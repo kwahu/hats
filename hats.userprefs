@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\backgroundSounds.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Dialog.cs">
     <Files>
-      <File FileName="Assets\backgroundSounds.cs" Line="1" Column="1" />
-      <File FileName="Assets\bombingTarget.cs" Line="28" Column="1" />
-      <File FileName="Assets\randomFaunaOverlay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Dialog.cs" Line="14" Column="55" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="81" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
