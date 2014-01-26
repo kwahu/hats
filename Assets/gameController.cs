@@ -66,7 +66,11 @@ public class gameController : MonoBehaviour
 		void Noir ()
 		{
 				if (hatFound) {
+					outro.SetActive (true);
+					if (Input.GetButtonDown ("Fire1")) {
 						Application.LoadLevel ("ending");
+					}
+						
 				}
 		}
 

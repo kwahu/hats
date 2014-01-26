@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/Scenes/noir.unity
   - enabled: 1
     path: Assets/Scenes/airborn.unity
+  - enabled: 1
+    path: Assets/Scenes/ending.unity
