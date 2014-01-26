@@ -4,11 +4,13 @@ using System.Collections;
 public class bombingTarget : MonoBehaviour {
 
 	GameObject player;
-	Vector3 distanceSqr;
+	AudioSource audioSource;
 	public AudioClip siren;
 	
 	// Use this for initialization
 	void Start () {
+		audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource.clip = siren;
 		player = GameObject.Find ("Player");	
 	}
 	
@@ -17,7 +19,9 @@ public class bombingTarget : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter(Collider other){
-		Debug.Log("Something has entered this zone.");    
+	void OnTriggerEnter2D(Collider2D other){
+		if (!audio.isPlaying && (other.gameObject == player)){
+			audio.Play();
+		}
 	} 
 }
