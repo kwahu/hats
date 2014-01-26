@@ -73,7 +73,6 @@ public class gameController : MonoBehaviour
 		void Playground ()
 		{
 				if (hatFound) {
-						GameObject obj = GameObject.Find ("outro");
 						outro.SetActive (true);
 						if (Input.GetButtonDown ("Fire1")) {
 								Application.LoadLevel ("west");
@@ -84,7 +83,11 @@ public class gameController : MonoBehaviour
 		void Western ()
 		{		
 				if (targets == 0 && hatFound) {
-						Application.LoadLevel ("airborn");
+						outro.SetActive (true);
+						if (Input.GetButtonDown ("Fire1")) {
+								Application.LoadLevel ("airborn");
+						}
+						
 				}
 
 		}
