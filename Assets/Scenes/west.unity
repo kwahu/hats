@@ -8655,7 +8655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759d5666378b47e45b9ab54f6f4f0a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTheme: 0
+  currentTheme: 1
+  targets: 5
+  westernHatFound: 0
+  planesHatFound: 0
 --- !u!1001 &1990840563
 Prefab:
   m_ObjectHideFlags: 0

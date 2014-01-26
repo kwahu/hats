@@ -360,6 +360,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 232650389}
   - 212: {fileID: 232650388}
+  - 114: {fileID: 232650391}
+  - 61: {fileID: 232650390}
   m_Layer: 0
   m_Name: airborn_assets_3
   m_TagString: Untagged
@@ -401,6 +403,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &232650390
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232650387}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.05999994, y: .549999952}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &232650391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232650387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
 --- !u!1 &320882507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1858,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 388824205}
   - 212: {fileID: 388824204}
+  - 114: {fileID: 388824206}
+  - 61: {fileID: 388824207}
   m_Layer: 0
   m_Name: airborn_assets_3
   m_TagString: Untagged
@@ -1874,6 +1901,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &388824206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388824203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+--- !u!61 &388824207
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388824203}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.05999994, y: .549999952}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &390067219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,6 +4004,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 944827525}
   - 212: {fileID: 944827524}
+  - 61: {fileID: 944827527}
+  - 114: {fileID: 944827526}
   m_Layer: 0
   m_Name: airborn_assets_3
   m_TagString: Untagged
@@ -3995,6 +4047,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &944827526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 944827523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+--- !u!61 &944827527
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 944827523}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.05999994, y: .549999952}
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &980559993
 Prefab:
   m_ObjectHideFlags: 0
@@ -4470,6 +4545,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1092661139}
   - 212: {fileID: 1092661138}
+  - 114: {fileID: 1092661141}
+  - 58: {fileID: 1092661140}
   m_Layer: 0
   m_Name: airborn_assets_4
   m_TagString: Untagged
@@ -4511,6 +4588,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!58 &1092661140
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1092661137}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .254999995
+  m_Center: {x: 0, y: 0}
+--- !u!114 &1092661141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1092661137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
 --- !u!1 &1110851921
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,6 +4734,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1157571941}
   - 212: {fileID: 1157571940}
+  - 60: {fileID: 1157571942}
   m_Layer: 0
   m_Name: asset_baloon
   m_TagString: Untagged
@@ -4675,6 +4776,40 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!60 &1157571942
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157571939}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .779999971, y: -.0949999988}
+      - {x: .779999971, y: .114999995}
+      - {x: .779999971, y: .13499999}
+      - {x: .629999995, y: .24499999}
+      - {x: .629999995, y: .405000001}
+      - {x: .589999974, y: .454999983}
+      - {x: .409999996, y: .454999983}
+      - {x: .319999993, y: .394999981}
+      - {x: -.159999996, y: .38499999}
+      - {x: -.329999983, y: .36499998}
+      - {x: -.560000002, y: .275000006}
+      - {x: -.779999971, y: .0449999981}
+      - {x: -.779999971, y: -.0350000001}
+      - {x: -.610000014, y: -.224999994}
+      - {x: -.469999999, y: -.305000007}
+      - {x: -.319999993, y: -.354999989}
+      - {x: -.159999996, y: -.394999981}
+      - {x: .319999993, y: -.394999981}
+      - {x: .419999987, y: -.454999983}
+      - {x: .589999974, y: -.454999983}
+      - {x: .629999995, y: -.405000001}
+      - {x: .680000007, y: -.194999993}
+      - {x: .75999999, y: -.125}
 --- !u!1 &1223202726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,6 +4819,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1223202728}
   - 212: {fileID: 1223202727}
+  - 60: {fileID: 1223202729}
   m_Layer: 0
   m_Name: asset_baloon
   m_TagString: Untagged
@@ -4725,6 +4861,40 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!60 &1223202729
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223202726}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .779999971, y: -.0949999988}
+      - {x: .779999971, y: .114999995}
+      - {x: .779999971, y: .13499999}
+      - {x: .629999995, y: .24499999}
+      - {x: .629999995, y: .405000001}
+      - {x: .589999974, y: .454999983}
+      - {x: .409999996, y: .454999983}
+      - {x: .319999993, y: .394999981}
+      - {x: -.159999996, y: .38499999}
+      - {x: -.329999983, y: .36499998}
+      - {x: -.560000002, y: .275000006}
+      - {x: -.779999971, y: .0449999981}
+      - {x: -.779999971, y: -.0350000001}
+      - {x: -.610000014, y: -.224999994}
+      - {x: -.469999999, y: -.305000007}
+      - {x: -.319999993, y: -.354999989}
+      - {x: -.159999996, y: -.394999981}
+      - {x: .319999993, y: -.394999981}
+      - {x: .419999987, y: -.454999983}
+      - {x: .589999974, y: -.454999983}
+      - {x: .629999995, y: -.405000001}
+      - {x: .680000007, y: -.194999993}
+      - {x: .75999999, y: -.125}
 --- !u!1001 &1243540802
 Prefab:
   m_ObjectHideFlags: 0
@@ -6664,6 +6834,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1515974711}
   - 212: {fileID: 1515974710}
+  - 114: {fileID: 1515974713}
+  - 58: {fileID: 1515974712}
   m_Layer: 0
   m_Name: airborn_assets_4
   m_TagString: Untagged
@@ -6705,6 +6877,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!58 &1515974712
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515974709}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .254999995
+  m_Center: {x: 0, y: 0}
+--- !u!114 &1515974713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515974709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
 --- !u!1 &1556087192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7449,6 +7644,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1864134890}
   - 212: {fileID: 1864134889}
+  - 58: {fileID: 1864134892}
+  - 114: {fileID: 1864134891}
   m_Layer: 0
   m_Name: airborn_assets_4
   m_TagString: Untagged
@@ -7486,10 +7683,33 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1864134888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.4856262, y: 7.62210178, z: 0}
+  m_LocalPosition: {x: 31.3182831, y: -38.9255447, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1864134891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1864134888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+--- !u!58 &1864134892
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1864134888}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .254999995
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1891976135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7796,7 +8016,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759d5666378b47e45b9ab54f6f4f0a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTheme: 0
+  currentTheme: 2
+  targets: 6
+  westernHatFound: 0
+  planesHatFound: 0
 --- !u!1001 &1990840563
 Prefab:
   m_ObjectHideFlags: 0
@@ -8020,6 +8243,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2116773828}
   - 212: {fileID: 2116773827}
+  - 114: {fileID: 2116773830}
+  - 61: {fileID: 2116773829}
   m_Layer: 0
   m_Name: airborn_assets_3
   m_TagString: Untagged
@@ -8061,6 +8286,29 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &2116773829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116773826}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.05999994, y: .549999952}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &2116773830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116773826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be1a339a30a7ed478984af6e24a8e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
 --- !u!1 &2124016710
 GameObject:
   m_ObjectHideFlags: 0
