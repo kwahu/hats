@@ -34,6 +34,8 @@ public class PlayerControl : MonoBehaviour
 		public float angle;
 		public GameObject direction;
 
+		public AudioClip bombsAway;		
+
 		void Awake ()
 		{
 				anim = GetComponent<Animator> ();
