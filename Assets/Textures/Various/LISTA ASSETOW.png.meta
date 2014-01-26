@@ -21,16 +21,16 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,69 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: LISTA ASSETOW_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 49
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 49
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 62
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 52
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 14
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: LISTA ASSETOW_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
