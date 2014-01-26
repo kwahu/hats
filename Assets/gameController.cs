@@ -96,8 +96,11 @@ public class gameController : MonoBehaviour
 		{
 				Debug.Log ("planes");
 				if (targets == 0) {
-						Application.LoadLevel ("noir");
-				}
+			outro.SetActive (true);
+			if (Input.GetButtonDown ("Fire1")) {
+				Application.LoadLevel ("noir");
+			}
+		}
 		}
 
 }
