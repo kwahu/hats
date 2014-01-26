@@ -16,6 +16,7 @@ public class gameController : MonoBehaviour
 		GameObject player;
 		public int targets = 10;
 		public bool hatFound;
+		public GameObject outro;
 
 		void Start ()
 		{
@@ -45,7 +46,7 @@ public class gameController : MonoBehaviour
 
 		void Update ()
 		{
-		Debug.Log (currentTheme);
+				Debug.Log (currentTheme);
 				switch (currentTheme) {
 				case Theme.NOIR:
 						Noir ();
@@ -72,7 +73,11 @@ public class gameController : MonoBehaviour
 		void Playground ()
 		{
 				if (hatFound) {
-						Application.LoadLevel ("west");
+						GameObject obj = GameObject.Find ("outro");
+						outro.SetActive (true);
+						if (Input.GetButtonDown ("Fire1")) {
+								Application.LoadLevel ("west");
+						}
 				}
 		}
 
@@ -86,7 +91,7 @@ public class gameController : MonoBehaviour
 
 		void Planes ()
 		{
-		Debug.Log ("planes");
+				Debug.Log ("planes");
 				if (targets == 0) {
 						Application.LoadLevel ("noir");
 				}
