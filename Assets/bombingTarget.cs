@@ -4,7 +4,6 @@ using System.Collections;
 public class bombingTarget : MonoBehaviour {
 
 	GameObject player;
-	Vector3 distanceSqr;
 	public AudioClip siren;
 	
 	// Use this for initialization
@@ -17,7 +16,8 @@ public class bombingTarget : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter(Collider other){
-		Debug.Log("Something has entered this zone.");    
+	void OnTriggerEnter2D(Collider2D other){
+	
+		//AudioSource.PlayClipAtPoint(siren,this.transform.position);
 	} 
 }
