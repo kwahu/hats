@@ -3,9 +3,13 @@ using System.Collections;
 
 public class Explosion : MonoBehaviour {
 
+	public AudioClip bombExplosion;
+
 	float count;
+
 	// Use this for initialization
 	void Start () {
+		AudioSource.PlayClipAtPoint(bombExplosion,this.transform.position);
 		count = 0;
 	}
 	

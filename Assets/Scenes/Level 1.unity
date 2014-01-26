@@ -567,6 +567,8 @@ MonoBehaviour:
   playerIsDriving: 1
   angle: 0
   direction: {fileID: 1243775069}
+  bombsAway: {fileID: 0}
+  bombExplosion: {fileID: 8300000, guid: 8b4e61c51941a46d1aac273472c814fd, type: 3}
 --- !u!50 &270314463
 Rigidbody2D:
   m_ObjectHideFlags: 0

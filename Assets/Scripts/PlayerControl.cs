@@ -35,6 +35,7 @@ public class PlayerControl : MonoBehaviour
 		public GameObject direction;
 
 		public AudioClip bombsAway;		
+		public AudioClip bombExplosion;
 
 		void Awake ()
 		{

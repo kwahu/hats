@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
-  - 114: {fileID: 11400000}
   - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
+  - 114: {fileID: 11400000}
   m_Layer: 8
   m_Name: explosion1
   m_TagString: Untagged
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da644b334279c3940b4e2e5f17448a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombExplosion: {fileID: 8300000, guid: 8b4e61c51941a46d1aac273472c814fd, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
