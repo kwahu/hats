@@ -29,10 +29,12 @@ public class PlayerControl : MonoBehaviour
 		public float bulletSpeed = 20f;				// The speed the rocket will fire at.
 
 		public bool playerIsDriving = false;
+		public bool playerIsTalking = false;
 		float speed = 150;
 		float rotationSpeed = 5;
 		public float angle;
 		public GameObject direction;
+		public GameObject npcInRange = null;
 
 		void Awake ()
 		{
@@ -48,9 +50,11 @@ public class PlayerControl : MonoBehaviour
 		{
 
 				if (Input.GetButtonDown ("Fire1"))
-					if (playerIsDriving)
+				if (playerIsDriving)
 						FireBomb ();
-					else
+				else if (playerIsTalking) {
+						Talk ();
+				} else
 						FireBullet ();
 
 		}
@@ -64,6 +68,29 @@ public class PlayerControl : MonoBehaviour
 						Driving (h, v);
 				else
 						Walking (h, v);
+		}
+
+		void Talk ()
+		{
+				Debug.Log ("talk methid");
+
+				if (npcInRange) {
+						Debug.Log ("TALKING!!!");
+						if(!npcInRange.GetComponent<Dialog>().started)
+							npcInRange.GetComponent<Dialog>().Init();
+
+						npcInRange = null;
+				}
+		}
+
+	//*** START TALKING
+		void OnTriggerStay2D (Collider2D coll)
+		{
+				if (coll.gameObject.tag == "Enemy") {
+						if (Input.GetButtonDown ("Fire1")) {
+								npcInRange = coll.gameObject;
+						}
+				}
 		}
 
 		void Walking (float h, float v)
@@ -112,16 +139,16 @@ public class PlayerControl : MonoBehaviour
 	
 		void FireBullet ()
 		{
-		GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
+				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
 				
 				obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
 		}
 
-	void FireBomb ()
-	{
-		GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
-		obj.rigidbody2D.AddForce (new Vector2(0,-100));
-	}
+		void FireBomb ()
+		{
+				GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
+				obj.rigidbody2D.AddForce (new Vector2 (0, -100));
+		}
 	
 		public IEnumerator Taunt ()
 		{

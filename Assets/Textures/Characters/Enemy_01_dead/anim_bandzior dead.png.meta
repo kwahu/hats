@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 505352333cf110844824eab3756f1153
+guid: e3b9f0022c4a92a4d86578c6c9ada144
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -21,7 +21,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -2
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 0
     aniso: 1
@@ -45,112 +45,94 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: LISTA_0
+    - name: noir_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 36
-        width: 213
-        height: 161
+        x: 10
+        y: 13
+        width: 219
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_1
+    - name: noir_1
       rect:
         serializedVersion: 2
-        x: 496
-        y: 40
-        width: 217
-        height: 209
+        x: 244
+        y: 13
+        width: 99
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_2
+    - name: noir_2
       rect:
         serializedVersion: 2
-        x: 912
-        y: 150
-        width: 4
-        height: 5
+        x: 361
+        y: 14
+        width: 16
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_3
+    - name: noir_3
       rect:
         serializedVersion: 2
-        x: 1259
-        y: 55
-        width: 80
-        height: 98
+        x: 388
+        y: 13
+        width: 219
+        height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_4
+    - name: noir_4
       rect:
         serializedVersion: 2
-        x: 1346
-        y: 55
-        width: 68
-        height: 112
+        x: 623
+        y: 51
+        width: 16
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_5
+    - name: noir_5
       rect:
         serializedVersion: 2
-        x: 746
-        y: 52
-        width: 84
-        height: 41
+        x: 730
+        y: 46
+        width: 31
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_6
+    - name: noir_6
       rect:
         serializedVersion: 2
-        x: 847
-        y: 57
-        width: 20
-        height: 31
+        x: 895
+        y: 27
+        width: 18
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_7
+    - name: noir_7
       rect:
         serializedVersion: 2
-        x: 877
-        y: 45
-        width: 207
-        height: 95
+        x: 623
+        y: 17
+        width: 16
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_8
+    - name: noir_8
       rect:
         serializedVersion: 2
-        x: 1102
-        y: 52
-        width: 32
-        height: 23
+        x: 664
+        y: 14
+        width: 35
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: LISTA_9
+    - name: noir_9
       rect:
         serializedVersion: 2
-        x: 1146
-        y: 52
-        width: 39
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: LISTA_10
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 54
-        width: 39
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: LISTA_11
-      rect:
-        serializedVersion: 2
-        x: 1432
-        y: 55
-        width: 87
-        height: 65
+        x: 730
+        y: 15
+        width: 31
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

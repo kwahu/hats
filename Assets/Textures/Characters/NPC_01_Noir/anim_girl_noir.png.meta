@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c7fa6994d111c74aa56fbdc06532bf1
+guid: a09cf6cf5e34134468031d7abbc20783
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,22 +45,22 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: anim_boy1_0
+    - name: anim_girl_noir_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 22
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: anim_boy1_1
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 22
+        x: 13
+        y: 7
         width: 21
         height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: anim_girl_noir_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 21
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
