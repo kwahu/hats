@@ -4214,9 +4214,6 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 0
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 1
-
-  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
-
   plane: {fileID: 98451909}
   tentacleLeft: {fileID: 772249655}
   tentacleRight: {fileID: 601254116}
@@ -4225,7 +4222,7 @@ MonoBehaviour:
   adjustLeft: 0
   adjustRight: 0
   adjusting: 0
-
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1032262514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4681,7 +4678,6 @@ SpriteRenderer:
   m_SortingLayerID: 2511236001
   m_Sprite: {fileID: 21300000, guid: 437f1c3c255245842a458ad659ba5104, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-
 --- !u!82 &1243775072
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4740,7 +4736,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-
 --- !u!1 &1255381869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4837,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .300000012
   m_Center: {x: 0, y: 0}
-
 --- !u!1 &1340114397
 GameObject:
   m_ObjectHideFlags: 0
@@ -4919,9 +4913,6 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 1
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-
-  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
-
   plane: {fileID: 1255381869}
   tentacleLeft: {fileID: 1110851921}
   tentacleRight: {fileID: 1263728882}
@@ -4930,7 +4921,7 @@ MonoBehaviour:
   adjustLeft: 0
   adjustRight: 0
   adjusting: 0
-
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1366311782
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5020,13 +5011,9 @@ GameObject:
   - 212: {fileID: 1380952113}
   - 61: {fileID: 1380952112}
   - 114: {fileID: 1380952114}
-
   - 114: {fileID: 1380952115}
   - 58: {fileID: 1380952116}
   m_Layer: 0
-
-  m_Layer: 14
-
   m_Name: LISTA_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5192,9 +5179,6 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 0
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 1
-
-  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
-
   plane: {fileID: 1962435120}
   tentacleLeft: {fileID: 1465374072}
   tentacleRight: {fileID: 2134842747}
@@ -5203,7 +5187,7 @@ MonoBehaviour:
   adjustLeft: 0
   adjustRight: 0
   adjusting: 0
-
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1416218125
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6741,9 +6725,6 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 1
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-
-  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
-
   plane: {fileID: 1693562569}
   tentacleLeft: {fileID: 1951524933}
   tentacleRight: {fileID: 1464523584}
@@ -6752,7 +6733,7 @@ MonoBehaviour:
   adjustLeft: 0
   adjustRight: 0
   adjusting: 0
-
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1663052348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7336,9 +7317,6 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 1
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-
-  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
-
   plane: {fileID: 390067219}
   tentacleLeft: {fileID: 349411269}
   tentacleRight: {fileID: 160498239}
@@ -7347,7 +7325,7 @@ MonoBehaviour:
   adjustLeft: 0
   adjustRight: 0
   adjusting: 0
-
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1862622592
 CircleCollider2D:
   m_ObjectHideFlags: 0
