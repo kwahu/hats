@@ -699,9 +699,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 335317669}
   - 20: {fileID: 335317668}
-  - 124: {fileID: 335317667}
-  - 92: {fileID: 335317666}
-  - 81: {fileID: 335317665}
   m_Layer: 0
   m_Name: splashCamera
   m_TagString: Untagged
@@ -709,27 +706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &335317665
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335317664}
-  m_Enabled: 1
---- !u!92 &335317666
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335317664}
-  m_Enabled: 1
---- !u!124 &335317667
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335317664}
-  m_Enabled: 1
 --- !u!20 &335317668
 Camera:
   m_ObjectHideFlags: 0
@@ -3910,7 +3886,6 @@ GameObject:
   - 4: {fileID: 1032262519}
   - 212: {fileID: 1032262518}
   - 95: {fileID: 1032262517}
-  - 114: {fileID: 1032262516}
   - 50: {fileID: 1032262515}
   - 58: {fileID: 1032262514}
   - 114: {fileID: 1032262513}
@@ -3961,31 +3936,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1032262516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1032262512}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
-  moveForce: 365
-  maxSpeed: 3
-  jumpClips: []
-  jumpForce: 1000
-  taunts: []
-  tauntProbability: 50
-  tauntDelay: 1
-  rocket: {fileID: 0}
-  bulletSpeed: 20
-  playerIsDriving: 0
-  angle: 0
-  direction: {fileID: 0}
 --- !u!95 &1032262517
 Animator:
   serializedVersion: 2
@@ -4203,7 +4153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1154809984
 Transform:
   m_ObjectHideFlags: 0
@@ -4412,7 +4362,6 @@ GameObject:
   - 4: {fileID: 1366311787}
   - 212: {fileID: 1366311786}
   - 95: {fileID: 1366311785}
-  - 114: {fileID: 1366311784}
   - 50: {fileID: 1366311783}
   - 58: {fileID: 1366311782}
   - 114: {fileID: 1366311781}
@@ -4463,31 +4412,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1366311784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1366311780}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
-  moveForce: 365
-  maxSpeed: 3
-  jumpClips: []
-  jumpForce: 1000
-  taunts: []
-  tauntProbability: 50
-  tauntDelay: 1
-  rocket: {fileID: 0}
-  bulletSpeed: 20
-  playerIsDriving: 0
-  angle: 0
-  direction: {fileID: 0}
 --- !u!95 &1366311785
 Animator:
   serializedVersion: 2
@@ -4652,7 +4576,6 @@ GameObject:
   - 4: {fileID: 1416218123}
   - 212: {fileID: 1416218129}
   - 95: {fileID: 1416218128}
-  - 114: {fileID: 1416218127}
   - 50: {fileID: 1416218126}
   - 58: {fileID: 1416218125}
   - 114: {fileID: 1416218124}
@@ -4715,31 +4638,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1416218127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416218122}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
-  moveForce: 365
-  maxSpeed: 3
-  jumpClips: []
-  jumpForce: 1000
-  taunts: []
-  tauntProbability: 50
-  tauntDelay: 1
-  rocket: {fileID: 0}
-  bulletSpeed: 20
-  playerIsDriving: 0
-  angle: 0
-  direction: {fileID: 0}
 --- !u!95 &1416218128
 Animator:
   serializedVersion: 2
@@ -6584,7 +6482,6 @@ GameObject:
   - 4: {fileID: 1862622597}
   - 212: {fileID: 1862622596}
   - 95: {fileID: 1862622595}
-  - 114: {fileID: 1862622594}
   - 50: {fileID: 1862622593}
   - 58: {fileID: 1862622592}
   - 114: {fileID: 1862622591}
@@ -6635,31 +6532,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1862622594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1862622590}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
-  moveForce: 365
-  maxSpeed: 3
-  jumpClips: []
-  jumpForce: 1000
-  taunts: []
-  tauntProbability: 50
-  tauntDelay: 1
-  rocket: {fileID: 0}
-  bulletSpeed: 20
-  playerIsDriving: 0
-  angle: 0
-  direction: {fileID: 0}
 --- !u!95 &1862622595
 Animator:
   serializedVersion: 2

@@ -46,7 +46,11 @@ public class PlayerControl : MonoBehaviour
 
 		void Update ()
 		{
+
 				if (Input.GetButtonDown ("Fire1"))
+					if (playerIsDriving)
+						FireBomb ();
+					else
 						FireBullet ();
 
 		}
@@ -108,10 +112,16 @@ public class PlayerControl : MonoBehaviour
 	
 		void FireBullet ()
 		{
-				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
-				//obj.layer = LayerMask.NameToLayer("Bullets");
+		GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
+				
 				obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
 		}
+
+	void FireBomb ()
+	{
+		GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
+		obj.rigidbody2D.AddForce (new Vector2(0,-100));
+	}
 	
 		public IEnumerator Taunt ()
 		{
