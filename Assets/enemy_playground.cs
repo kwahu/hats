@@ -18,7 +18,7 @@ public class enemy_playground : MonoBehaviour
 
 		public void SawPlayer (bool set)
 		{
-			sawPlayer = set;
+				sawPlayer = set;
 		}
 
 		void Awake ()
@@ -35,34 +35,35 @@ public class enemy_playground : MonoBehaviour
 				if (ShouldFollowPlayerOnSight && sawPlayer)
 						Follow ();
 				else if (ShouldRunFromPlayerOnSight && sawPlayer)
-						RunAway();
+						RunAway ();
 				else
 						Move ();
 		}
 
 		void Follow ()
 		{
-			sawPlayer = false;
+				sawPlayer = false;
 
 				rigidbody2D.AddForce ((player.transform.position - this.transform.position) * speed);
 
-		if(ShouldShootPlayerOnSight && (Random.value > 0.95f) ) FireBullet();
+				if (ShouldShootPlayerOnSight && (Random.value > 0.95f))
+						FireBullet ();
 
 		}
-			void FireBullet()
-			{
-		Debug.Log("FIRE!");
-			GameObject obj = (GameObject)Instantiate (Resources.Load ( "bullet_enemy"), transform.position ,Quaternion.Euler (0, 0, 0));
-			//obj.layer = LayerMask.NameToLayer("Bullets");
-			obj.rigidbody2D.AddForce( rigidbody2D.velocity.normalized * 1000 );
+
+		void FireBullet ()
+		{
+				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_enemy"), transform.position, Quaternion.Euler (0, 0, 0));
+				//obj.layer = LayerMask.NameToLayer("Bullets");
+				obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
 		}
 
-	void RunAway ()
-	{
-			sawPlayer = false;
+		void RunAway ()
+		{
+				sawPlayer = false;
 		
-		rigidbody2D.AddForce (-(player.transform.position - this.transform.position) * speed);
-	}
+				rigidbody2D.AddForce (-(player.transform.position - this.transform.position) * speed);
+		}
 
 		void Move ()
 		{
@@ -98,8 +99,8 @@ public class enemy_playground : MonoBehaviour
 		{
 				ChangeDirection ();
 
-		if(coll.gameObject.layer == LayerMask.NameToLayer("PlayerBullets"))
-			Destroy(this.gameObject);
+				if (coll.gameObject.layer == LayerMask.NameToLayer ("PlayerBullets"))
+						Destroy (this.gameObject);
 		}
 
 		void OnCollisionStay2D (Collision2D coll)
