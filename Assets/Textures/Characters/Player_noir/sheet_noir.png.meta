@@ -23,14 +23,14 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,150 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: sheet_noir_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 175
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 174
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 175
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 174
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 125
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 125
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 125
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 125
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 77
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 75
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 77
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 75
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 29
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 29
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 29
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: sheet_noir_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 29
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
