@@ -29,7 +29,7 @@ public class PlayerControl : MonoBehaviour
 		public float bulletSpeed = 20f;				// The speed the rocket will fire at.
 
 		public bool playerIsDriving = false;
-	float speed = 100;
+	float speed = 150;
 	 float rotationSpeed = 5;
 
 	public float angle;
@@ -41,6 +41,8 @@ public class PlayerControl : MonoBehaviour
 				anim = GetComponent<Animator> ();
 
 				anim.speed = 0.5f;
+
+		if(playerIsDriving) transform.GetChild(0).gameObject.SetActive(true);
 
 //				myTrans = transform;
 			//	myPos = myTrans.position;
