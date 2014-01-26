@@ -4,10 +4,13 @@ using System.Collections;
 public class bombingTarget : MonoBehaviour {
 
 	GameObject player;
+	AudioSource audioSource;
 	public AudioClip siren;
 	
 	// Use this for initialization
 	void Start () {
+		audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource.clip = siren;
 		player = GameObject.Find ("Player");	
 	}
 	
@@ -17,7 +20,8 @@ public class bombingTarget : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-	
-		//AudioSource.PlayClipAtPoint(siren,this.transform.position);
+		if (!audio.isPlaying && (other.gameObject == player)){
+			audio.Play();
+		}
 	} 
 }
