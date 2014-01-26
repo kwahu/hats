@@ -5,7 +5,7 @@ public class Dialog : MonoBehaviour {
 
 	public Sprite[] text;
 	public AudioSource[] sound;
-	int slideNum = -1;
+	int slideNum = 0;
 	public bool started = false;
 	public GameObject dialogPoster;
 
@@ -13,15 +13,15 @@ public class Dialog : MonoBehaviour {
 	{
 		dialogPoster = this.transform.GetChild(0).gameObject;
 		started = true;
-		dialogPoster.GetComponent<SpriteRenderer>().sprite = text[slideNum];
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(started && Input.GetButtonDown ("Fire1") && slideNum <= text.Length )
+		if(started && Input.GetButtonDown ("Fire1") && slideNum < text.Length )
 		{
-			slideNum += 1;
+
 			dialogPoster.GetComponent<SpriteRenderer>().sprite = text[slideNum];
+			slideNum += 1;
 		}
 	}
 }

@@ -72,10 +72,8 @@ public class PlayerControl : MonoBehaviour
 
 		void Talk ()
 		{
-				Debug.Log ("talk methid");
 
 				if (npcInRange) {
-						Debug.Log ("TALKING!!!");
 						if(!npcInRange.GetComponent<Dialog>().started)
 							npcInRange.GetComponent<Dialog>().Init();
 
