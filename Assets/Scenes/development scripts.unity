@@ -587,6 +587,7 @@ GameObject:
   - 50: {fileID: 270314463}
   - 114: {fileID: 270314465}
   - 61: {fileID: 270314464}
+  - 58: {fileID: 270314466}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -665,9 +666,11 @@ MonoBehaviour:
   tauntDelay: 1
   rocket: {fileID: 0}
   bulletSpeed: 20
-  playerIsDriving: 1
+  playerIsDriving: 0
+  playerIsTalking: 1
   angle: 0
   direction: {fileID: 1243775069}
+  npcInRange: {fileID: 0}
 --- !u!50 &270314463
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -710,6 +713,17 @@ MonoBehaviour:
   ouchClips: []
   hurtForce: 10
   damageAmount: 10
+--- !u!58 &270314466
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270314458}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
 --- !u!1 &320882507
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,12 +4226,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldFollowPlayerOnSight: 0
-  ShouldShootPlayerOnSight: 1
-  ShouldRunFromPlayerOnSight: 1
+  ShouldShootPlayerOnSight: 0
+  ShouldRunFromPlayerOnSight: 0
   plane: {fileID: 98451909}
   tentacleLeft: {fileID: 772249655}
   tentacleRight: {fileID: 601254116}
-  isDriving: 1
+  isDriving: 0
   turnValue: 0
   adjustLeft: 0
   adjustRight: 0
@@ -4346,6 +4360,89 @@ Transform:
   m_Children:
   - {fileID: 886692484}
   m_Father: {fileID: 1784337004}
+--- !u!1 &1039828249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1039828251}
+  - 212: {fileID: 1039828250}
+  - 58: {fileID: 1039828252}
+  - 114: {fileID: 1039828253}
+  m_Layer: 0
+  m_Name: NPC
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1039828250
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039828249}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 1c7fa6994d111c74aa56fbdc06532bf1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1039828251
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039828249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.2414246, y: -15.9144964, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children:
+  - {fileID: 1321470783}
+  m_Father: {fileID: 0}
+--- !u!58 &1039828252
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039828249}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .180000007
+  m_Center: {x: 0, y: 0}
+--- !u!114 &1039828253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039828249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f6410157216e6419aa8531563858a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 21300000, guid: 7d8f9fe452c175b43920fa4aa7af3188, type: 3}
+  - {fileID: 21300002, guid: 7d8f9fe452c175b43920fa4aa7af3188, type: 3}
+  - {fileID: 0}
+  sound: []
+  slideNum: 0
+  started: 0
+  dialogPoster: {fileID: 0}
 --- !u!1 &1049173827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,6 +4934,56 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .300000012
   m_Center: {x: 0, y: 0}
+--- !u!1 &1321470782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1321470783}
+  - 212: {fileID: 1321470784}
+  m_Layer: 0
+  m_Name: dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1321470783
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321470782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1039828251}
+--- !u!212 &1321470784
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321470782}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 5
+  m_SortingOrder: 0
+  m_SortingLayerID: 149272721
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1327159623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,8 +5132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2580e8af4ba443ab0e9366fe3b634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldFollowPlayerOnSight: 1
-  ShouldShootPlayerOnSight: 1
+  ShouldFollowPlayerOnSight: 0
+  ShouldShootPlayerOnSight: 0
   ShouldRunFromPlayerOnSight: 0
   plane: {fileID: 1255381869}
   tentacleLeft: {fileID: 1110851921}
@@ -5252,12 +5399,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldFollowPlayerOnSight: 0
-  ShouldShootPlayerOnSight: 1
-  ShouldRunFromPlayerOnSight: 1
+  ShouldShootPlayerOnSight: 0
+  ShouldRunFromPlayerOnSight: 0
   plane: {fileID: 1962435120}
   tentacleLeft: {fileID: 1465374072}
   tentacleRight: {fileID: 2134842747}
-  isDriving: 1
+  isDriving: 0
   turnValue: 0
   adjustLeft: 0
   adjustRight: 0
@@ -6797,13 +6944,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2580e8af4ba443ab0e9366fe3b634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldFollowPlayerOnSight: 1
-  ShouldShootPlayerOnSight: 1
+  ShouldFollowPlayerOnSight: 0
+  ShouldShootPlayerOnSight: 0
   ShouldRunFromPlayerOnSight: 0
   plane: {fileID: 1693562569}
   tentacleLeft: {fileID: 1951524933}
   tentacleRight: {fileID: 1464523584}
-  isDriving: 1
+  isDriving: 0
   turnValue: 0
   adjustLeft: 0
   adjustRight: 0
@@ -7389,13 +7536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2580e8af4ba443ab0e9366fe3b634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldFollowPlayerOnSight: 1
-  ShouldShootPlayerOnSight: 1
+  ShouldFollowPlayerOnSight: 0
+  ShouldShootPlayerOnSight: 0
   ShouldRunFromPlayerOnSight: 0
   plane: {fileID: 390067219}
   tentacleLeft: {fileID: 349411269}
   tentacleRight: {fileID: 160498239}
-  isDriving: 1
+  isDriving: 0
   turnValue: 0
   adjustLeft: 0
   adjustRight: 0
