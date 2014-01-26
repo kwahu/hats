@@ -20,17 +20,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: -2
+  maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,96 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: noir_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 219
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 13
+        width: 99
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 14
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 13
+        width: 219
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 51
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_5
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 46
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_6
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 27
+        width: 18
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 17
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 14
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: noir_9
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 15
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
