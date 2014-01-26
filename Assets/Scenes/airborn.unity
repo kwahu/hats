@@ -8018,8 +8018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTheme: 2
   targets: 6
-  westernHatFound: 0
-  planesHatFound: 0
+  hatFound: 0
 --- !u!1001 &1990840563
 Prefab:
   m_ObjectHideFlags: 0

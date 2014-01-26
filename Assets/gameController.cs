@@ -14,13 +14,12 @@ public class gameController : MonoBehaviour
 
 		public Theme currentTheme;
 		GameObject player;
-
-	public int targets = 10;
-	public bool hatFound;
+		public int targets = 10;
+		public bool hatFound;
 
 		void Start ()
 		{
-				currentTheme = Theme.PLAYGROUND;
+				//currentTheme = Theme.PLAYGROUND;
 				player = GameObject.Find ("Player");
 				hatFound = false;
 		}
@@ -46,6 +45,7 @@ public class gameController : MonoBehaviour
 
 		void Update ()
 		{
+		Debug.Log (currentTheme);
 				switch (currentTheme) {
 				case Theme.NOIR:
 						Noir ();
@@ -64,32 +64,32 @@ public class gameController : MonoBehaviour
 
 		void Noir ()
 		{
-
+				if (hatFound) {
+						Application.LoadLevel ("ending");
+				}
 		}
 
 		void Playground ()
 		{
-		if(westernHatFound)
-		{
-			Application.LoadLevel("west");
-		}
+				if (hatFound) {
+						Application.LoadLevel ("west");
+				}
 		}
 
 		void Western ()
-	{		
-		if(targets == 0 && planesHatFound)
-		{
-			Application.LoadLevel("noir");
-		}
+		{		
+				if (targets == 0 && hatFound) {
+						Application.LoadLevel ("airborn");
+				}
 
 		}
 
 		void Planes ()
 		{
-		if(targets == 0)
-		{
-			Application.LoadLevel("noir");
-		}
+		Debug.Log ("planes");
+				if (targets == 0) {
+						Application.LoadLevel ("noir");
+				}
 		}
 
 }
