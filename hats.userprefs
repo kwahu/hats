@@ -1,9 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Dialog.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\gameController.cs">
     <Files>
-      <File FileName="Assets\Dialog.cs" Line="14" Column="55" />
-      <File FileName="Assets\Scripts\PlayerControl.cs" Line="81" Column="4" />
+      <File FileName="Assets\Dialog.cs" Line="20" Column="2" />
+      <File FileName="Assets\Scripts\PlayerControl.cs" Line="76" Column="22" />
+      <File FileName="Assets\Scripts\Gun.cs" Line="43" Column="7" />
+      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="73" Column="6" />
+      <File FileName="Assets\Scripts\Score.cs" Line="28" Column="3" />
+      <File FileName="Assets\Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets\gameController.cs" Line="42" Column="28" />
+      <File FileName="Assets\ChangeScene.cs" Line="10" Column="1" />
+      <File FileName="Assets\Hat.cs" Line="13" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -9,7 +9,9 @@ public class Hat : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "Player")
 		{
-			Camera.main.GetComponent<gameController>().ChangeTheme(hatTheme);
+
+			//Camera.main.GetComponent<gameController>().
+			//Camera.main.GetComponent<gameController>().ChangeTheme(hatTheme);
 
 			Destroy(this.gameObject);
 		}
