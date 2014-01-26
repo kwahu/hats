@@ -766,8 +766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6804babace5cc47dd8b61abb292c4be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facingRight: 1
-  jump: 0
   moveForce: 365
   maxSpeed: 3
   jumpClips: []
@@ -5856,7 +5854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1154809984
 Transform:
   m_ObjectHideFlags: 0
@@ -5901,7 +5899,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 6176f19b857433845b6d1453b781c3e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec8951b986fd56a48a03d88fdf02c5c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1156413179
 GameObject:
@@ -10440,6 +10438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTheme: 0
+  targets: 1
+  westernHatFound: 0
+  planesHatFound: 0
 --- !u!1001 &1990840563
 Prefab:
   m_ObjectHideFlags: 0
