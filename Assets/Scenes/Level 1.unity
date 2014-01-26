@@ -3910,7 +3910,7 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 0
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 1
-  gunShot: {fileID: 0}
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1032262514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4446,7 +4446,7 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 1
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-  gunShot: {fileID: 0}
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1366311782
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4533,6 +4533,8 @@ GameObject:
   - 212: {fileID: 1380952113}
   - 61: {fileID: 1380952112}
   - 114: {fileID: 1380952114}
+  - 114: {fileID: 1380952115}
+  - 58: {fileID: 1380952116}
   m_Layer: 0
   m_Name: LISTA_1
   m_TagString: Untagged
@@ -4596,6 +4598,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa72c7f22bc07724b9c960bc34ace884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1380952115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380952110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c6a9db6cdc6b14bae39aea58455789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siren: {fileID: 8300000, guid: 6663ed9e51b01324587aa6cb2312a0a7, type: 3}
+--- !u!58 &1380952116
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380952110}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 2
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1402452341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4673,7 +4698,7 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 0
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 1
-  gunShot: {fileID: 0}
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1416218125
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6106,7 +6131,7 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 0
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-  gunShot: {fileID: 0}
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1663052348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6640,7 +6665,7 @@ MonoBehaviour:
   ShouldFollowPlayerOnSight: 1
   ShouldShootPlayerOnSight: 1
   ShouldRunFromPlayerOnSight: 0
-  gunShot: {fileID: 0}
+  gunShot: {fileID: 8300000, guid: b7c6d90816c62f9489975bcd5790ee0d, type: 3}
 --- !u!58 &1862622592
 CircleCollider2D:
   m_ObjectHideFlags: 0
