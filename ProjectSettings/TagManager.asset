@@ -14,6 +14,7 @@ TagManager:
   - HealthBar
   - EnemyBullets
   - 
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -30,7 +31,7 @@ TagManager:
   User Layer 13: EnemyBullets
   User Layer 14: Walls
   User Layer 15: EnemyTentacle
-  User Layer 16: 
+  User Layer 16: BombTarget
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 
