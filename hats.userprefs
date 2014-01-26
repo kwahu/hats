@@ -1,24 +1,24 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\bombingTarget.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bomb.cs">
     <Files>
       <File FileName="Assets\Scripts\CoreEngine\CoreSound\CoreSound.cs" Line="1" Column="1" />
       <File FileName="Assets\Splash.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Bullet.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\enemy_playground.cs" Line="102" Column="1" />
+      <File FileName="Assets\enemy_playground.cs" Line="1" Column="1" />
       <File FileName="Assets\SpriteOrdering.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LayBombs.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bomb.cs" Line="1" Column="1" />
-      <File FileName="Assets\Explosion.cs" Line="12" Column="3" />
+      <File FileName="Assets\Explosion.cs" Line="1" Column="1" />
       <File FileName="Assets\sight.cs" Line="1" Column="1" />
       <File FileName="Assets\BombFly.cs" Line="1" Column="1" />
       <File FileName="Assets\gameController.cs" Line="1" Column="1" />
       <File FileName="Assets\ChangeScene.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FollowPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\backgroundSounds.cs" Line="14" Column="17" />
-      <File FileName="Assets\bombingTarget.cs" Line="16" Column="3" />
+      <File FileName="Assets\backgroundSounds.cs" Line="8" Column="4" />
+      <File FileName="Assets\bombingTarget.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
