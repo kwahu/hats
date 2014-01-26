@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 6804babace5cc47dd8b61abb292c4be2
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rocket: {instanceID: 0}
+  - direction: {instanceID: 0}
+  - propeller: {fileID: 8300000, guid: 69471df533595f44eba0bb53e7aa02ca, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

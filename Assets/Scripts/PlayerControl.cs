@@ -34,9 +34,6 @@ public class PlayerControl : MonoBehaviour
 		public float angle;
 		public GameObject direction;
 
-		public AudioClip bombsAway;		
-		public AudioClip bombExplosion;
-
 		void Awake ()
 		{
 				anim = GetComponent<Animator> ();
@@ -44,7 +41,7 @@ public class PlayerControl : MonoBehaviour
 				anim.speed = 0.5f;
 
 				if (playerIsDriving)
-						transform.GetChild (0).gameObject.SetActive (true);
+						transform.GetChild (0).gameObject.SetActive (true);				
 		}
 
 		void Update ()

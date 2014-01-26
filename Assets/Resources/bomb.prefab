@@ -55,6 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fee2deb7d5d644daa7351c4bfc7090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombFly: {fileID: 8300000, guid: f893fc17156173c4ca61b4b46114cb92, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

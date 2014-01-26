@@ -16,6 +16,9 @@ public class enemy_playground : MonoBehaviour
 		bool sawPlayer = false;
 		GameObject player;
 
+	    public AudioClip gunShot;
+
+
 		public void SawPlayer (bool set)
 		{
 				sawPlayer = set;
@@ -53,6 +56,7 @@ public class enemy_playground : MonoBehaviour
 
 		void FireBullet ()
 		{
+				AudioSource.PlayClipAtPoint(gunShot,this.transform.position);
 				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_enemy"), transform.position, Quaternion.Euler (0, 0, 0));
 				//obj.layer = LayerMask.NameToLayer("Bullets");
 				obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
