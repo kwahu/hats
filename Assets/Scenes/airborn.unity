@@ -426,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!1 &320882507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!61 &388824207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3933,6 +3935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!61 &944827527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4485,6 +4488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!1 &1110851921
 GameObject:
   m_ObjectHideFlags: 0
@@ -6799,6 +6803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!1 &1556087192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,6 +7603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300004, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!58 &1864134892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8208,6 +8214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 21300000, guid: 1317e6b91e05bc243b8c5b40180fb11b, type: 3}
+  destroyed: 0
 --- !u!1 &2124016710
 GameObject:
   m_ObjectHideFlags: 0
