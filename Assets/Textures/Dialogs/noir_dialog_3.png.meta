@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba92301200867ed4ebf5e6e68cf09a76
+guid: bba04eacc6a61b1418faa8189d1369b9
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,85 +45,94 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: NIGGA WALK_0
+    - name: dialog 3ci_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 114
-        width: 27
-        height: 35
+        x: 5
+        y: 402
+        width: 127
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_1
+    - name: dialog 3ci_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 109
-        width: 19
+        x: 142
+        y: 369
+        width: 55
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog 3ci_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 322
+        width: 145
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog 3ci_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 278
+        width: 178
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog 3ci_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 223
+        width: 181
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_2
+    - name: dialog 3ci_5
       rect:
         serializedVersion: 2
-        x: 58
-        y: 103
-        width: 32
-        height: 50
+        x: 98
+        y: 175
+        width: 156
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_3
+    - name: dialog 3ci_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 64
-        width: 20
-        height: 37
+        x: 0
+        y: 122
+        width: 207
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_4
+    - name: dialog 3ci_7
       rect:
         serializedVersion: 2
-        x: 34
-        y: 64
-        width: 24
+        x: 130
+        y: 71
+        width: 131
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog 3ci_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 30
+        width: 112
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_5
+    - name: dialog 3ci_9
       rect:
         serializedVersion: 2
-        x: 60
-        y: 64
-        width: 31
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_6
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 16
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_7
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 14
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: NIGGA WALK_8
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 14
-        width: 19
-        height: 37
+        x: 219
+        y: 0
+        width: 35
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

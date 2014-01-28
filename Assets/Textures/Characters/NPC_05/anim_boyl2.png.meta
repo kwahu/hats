@@ -50,18 +50,18 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 17
-        width: 28
-        height: 43
+        width: 23
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: anim_boyl2_1
       rect:
         serializedVersion: 2
         x: 53
         y: 17
-        width: 26
+        width: 23
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

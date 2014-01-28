@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6f47caa6cd221b4592b55bb40ba8cf4
+guid: 0733efbca3f593e43b364e3c974089a7
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,22 +45,67 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: anim_girl1_0
+    - name: dialog5ty_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 17
-        width: 20
-        height: 36
+        x: 100
+        y: 278
+        width: 132
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: anim_girl1_1
+    - name: dialog5ty_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 17
-        width: 20
-        height: 35
+        x: 2
+        y: 236
+        width: 178
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog5ty_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 197
+        width: 185
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog5ty_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 148
+        width: 177
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog5ty_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 112
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog5ty_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 47
+        width: 104
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: dialog5ty_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 158
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
