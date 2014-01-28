@@ -13,7 +13,7 @@ TagManager:
   - ExplosionFX
   - HealthBar
   - EnemyBullets
-  - 
+  - NPC
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -67,6 +67,10 @@ TagManager:
   - name: Foreground
     userID: 3
     uniqueID: 1024582385
+    locked: 0
+  - name: Dialog
+    userID: 6
+    uniqueID: 3164167717
     locked: 0
   - name: UI
     userID: 5

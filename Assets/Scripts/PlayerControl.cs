@@ -3,150 +3,146 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-		//[HideInInspector]
-		//public bool
-		//		facingRight = true;			// For determining which way the player is currently facing.
-		//[HideInInspector]
-		//public bool
-		//		jump = false;				// Condition for whether the player should jump.
+	public AudioClip[] taunts;				// Array of clips for when the player taunts.
+	public float tauntProbability = 50f;	// Chance of a taunt happening.
+	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
+	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 
+	private Animator anim;					// Reference to the player's animator component.
 
-		public float moveForce = 365f;			// Amount of force added to move the player left and right.
-		public float maxSpeed = 3f;				// The fastest the player can travel in the x axis.
-		public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-		public float jumpForce = 1000f;			// Amount of force added when the player jumps.
-		public AudioClip[] taunts;				// Array of clips for when the player taunts.
-		public float tauntProbability = 50f;	// Chance of a taunt happening.
-		public float tauntDelay = 1f;			// Delay for when the taunt should happen.
+	public float bulletSpeed = 20f;				// The speed the rocket will fire at.
 
+	public bool playerIsDriving = false;
+	public bool playerIsTalking = false;
+	float speed = 150;
+	float rotationSpeed = 5;
+	public float angle;
+	public GameObject direction;
+	public GameObject npcInRange = null;
+	public float moveForce = 10;
+	public float moveBorder = 4.5f;
 
-		private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
-		//private Transform groundCheck;			// A position marking where to check if the player is grounded.
-		//private bool grounded = false;			// Whether or not the player is grounded.
-		private Animator anim;					// Reference to the player's animator component.
+	void Awake ()
+	{
+		anim = GetComponent<Animator> ();
 
-		public GameObject rocket;				// Prefab of the rocket.
-		public float bulletSpeed = 20f;				// The speed the rocket will fire at.
+		anim.speed = 0.5f;
 
-		public bool playerIsDriving = false;
-		public bool playerIsTalking = false;
-		float speed = 150;
-		float rotationSpeed = 5;
-		public float angle;
-		public GameObject direction;
-		public GameObject npcInRange = null;
+		if (playerIsDriving)
+			transform.GetChild (0).gameObject.SetActive (true);				
+	}
 
-		void Awake ()
-		{
-				anim = GetComponent<Animator> ();
+	void Update ()
+	{
 
-				anim.speed = 0.5f;
+		if (Input.GetButtonDown ("Fire1"))
+		if (playerIsDriving)
+			FireBomb ();
+		else if (playerIsTalking) {
+			Talk ();
+		} else
+			FireBullet ();
 
-				if (playerIsDriving)
-						transform.GetChild (0).gameObject.SetActive (true);				
+	}
+
+	void FixedUpdate ()
+	{
+		float h = Input.GetAxis ("Horizontal");
+		float v = Input.GetAxis ("Vertical");
+
+		if (playerIsDriving)
+			Driving (h, v);
+		else
+			Walking (h, v);
+
+		KeepPlayerWithinLevelBorder();
+	}
+
+	void KeepPlayerWithinLevelBorder()
+	{
+		Vector2 pos = transform.position;
+		
+		if(pos.x > moveBorder) pos.x = moveBorder;
+		if(pos.x < -moveBorder) pos.x = -moveBorder;
+		if(pos.y > moveBorder) pos.y = moveBorder;
+		if(pos.y < -moveBorder) pos.y = -moveBorder;
+		
+		transform.position = pos;
+	}
+
+	void Talk ()
+	{
+
+		if (npcInRange) {
+			if (!npcInRange.GetComponent<Dialog> ().started)
+				npcInRange.GetComponent<Dialog> ().Init ();
+
+			npcInRange = null;
 		}
-
-		void Update ()
-		{
-
-				if (Input.GetButtonDown ("Fire1"))
-				if (playerIsDriving)
-						FireBomb ();
-				else if (playerIsTalking) {
-						Talk ();
-				} else
-						FireBullet ();
-
-		}
-
-		void FixedUpdate ()
-		{
-				float h = Input.GetAxis ("Horizontal");
-				float v = Input.GetAxis ("Vertical");
-
-				if (playerIsDriving)
-						Driving (h, v);
-				else
-						Walking (h, v);
-		}
-
-		void Talk ()
-		{
-
-				if (npcInRange) {
-						if(!npcInRange.GetComponent<Dialog>().started)
-							npcInRange.GetComponent<Dialog>().Init();
-
-						npcInRange = null;
-				}
-		}
+	}
 
 	//*** START TALKING
-		void OnTriggerStay2D (Collider2D coll)
-		{
-				if (coll.gameObject.tag == "Enemy") {
-						if (Input.GetButtonDown ("Fire1")) {
-								npcInRange = coll.gameObject;
-						}
-				}
+	void OnTriggerStay2D (Collider2D coll)
+	{
+		if (coll.gameObject.tag == "NPC") {
+			if (Input.GetButtonDown ("Fire1")) {
+				npcInRange = coll.gameObject;
+			}
 		}
+	}
 
-		void Walking (float h, float v)
-		{
-				if (v > 0)
-						anim.Play ("walk_up");
-				else if (v < 0)
-						anim.Play ("walk_down");
-				else if (h > 0)
-						anim.Play ("walk_right");
-				else if (h < 0)
-						anim.Play ("walk_left");
+	void Walking (float h, float v)
+	{
+		if (v > 0)
+			anim.Play ("walk_up");
+		else if (v < 0)
+			anim.Play ("walk_down");
+		else if (h > 0)
+			anim.Play ("walk_right");
+		else if (h < 0)
+			anim.Play ("walk_left");
 
-				if (h * rigidbody2D.velocity.x < maxSpeed)
-						rigidbody2D.AddForce (Vector2.right * h * moveForce);
+		rigidbody2D.AddForce (Vector2.right * h * moveForce);
+		rigidbody2D.AddForce (Vector2.up * v * moveForce);
+	}
 		
-				if (v * rigidbody2D.velocity.y < maxSpeed)
-						rigidbody2D.AddForce (Vector2.up * v * moveForce);
+	void Driving (float h, float v)
+	{
+		//rotate plane sprite
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			direction.transform.Rotate (new Vector3 (0, 0, 1), -rotationSpeed);
 		}
-		
-		void Driving (float h, float v)
-		{
-				if (Input.GetKey (KeyCode.RightArrow)) {
-						direction.transform.Rotate (new Vector3 (0, 0, 1), -rotationSpeed);
-				}
-				if (Input.GetKey (KeyCode.LeftArrow)) {
-						direction.transform.Rotate (new Vector3 (0, 0, 1), rotationSpeed);
-				}
-
-				float dir = direction.transform.eulerAngles.z;
-
-				Vector2 vec = new Vector2 (-Mathf.Sin (dir * Mathf.Deg2Rad) * speed, Mathf.Cos (dir * Mathf.Deg2Rad) * speed);
-				this.rigidbody2D.AddForce (vec);
-
-				//Debug.Log (dir);
-				if (dir > 315 || dir < 45)
-						anim.Play ("walk_up");
-				else if (dir > 135 && dir < 225)
-						anim.Play ("walk_down");
-				else if (dir > 45 && dir < 135)
-						anim.Play ("walk_left");
-				else if (dir > 225 && dir < 315)
-						anim.Play ("walk_right");
-
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			direction.transform.Rotate (new Vector3 (0, 0, 1), rotationSpeed);
 		}
+
+		float dir = direction.transform.eulerAngles.z;
+
+		//move player in plane direction
+		Vector2 vec = new Vector2 (-Mathf.Sin (dir * Mathf.Deg2Rad) * moveForce, Mathf.Cos (dir * Mathf.Deg2Rad) * moveForce);
+		this.rigidbody2D.AddForce (vec);
+
+		if (dir > 315 || dir < 45)
+			anim.Play ("walk_up");
+		else if (dir > 135 && dir < 225)
+			anim.Play ("walk_down");
+		else if (dir > 45 && dir < 135)
+			anim.Play ("walk_left");
+		else if (dir > 225 && dir < 315)
+			anim.Play ("walk_right");
+	}
 	
-		void FireBullet ()
-		{
-				GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
-				
-				obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
-		}
+	void FireBullet ()
+	{
+		GameObject obj = (GameObject)Instantiate (Resources.Load ("bullet_player"), transform.position, Quaternion.Euler (0, 0, 0));
+		obj.rigidbody2D.AddForce (rigidbody2D.velocity.normalized * 1000);
+	}
 
-		void FireBomb ()
-		{
-				GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
-				obj.rigidbody2D.AddForce (new Vector2 (0, -100));
-		}
+	void FireBomb ()
+	{
+		GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
+		obj.rigidbody2D.AddForce (new Vector2 (0, -100));
+	}
 	
 	/*	public IEnumerator Taunt ()
 		{
@@ -181,23 +177,4 @@ public class PlayerControl : MonoBehaviour
 			// Otherwise return this index.
 						return i;
 		}*/
-
-		/*
-	 * 			// If the player should jump...
-				if (jump) {
-						// Set the Jump animator trigger parameter.
-						anim.SetTrigger ("Jump");
-
-						// Play a random jump audio clip.
-						int i = Random.Range (0, jumpClips.Length);
-						AudioSource.PlayClipAtPoint (jumpClips [i], transform.position);
-
-						// Add a vertical force to the player.
-						//	rigidbody2D.AddForce(new Vector2(0f, jumpForce));
-
-						// Make sure the player can't jump again until the jump conditions from Update are satisfied.
-						jump = false;
-				}
-
-*/
 }
