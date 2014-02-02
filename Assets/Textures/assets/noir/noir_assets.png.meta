@@ -49,35 +49,35 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 17
-        width: 208
-        height: 144
+        y: 18
+        width: 207
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_1
       rect:
         serializedVersion: 2
-        x: 278
-        y: 17
-        width: 222
-        height: 498
+        x: 279
+        y: 18
+        width: 220
+        height: 497
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 17
-        width: 101
-        height: 47
+        x: 513
+        y: 18
+        width: 99
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_3
       rect:
         serializedVersion: 2
-        x: 629
+        x: 630
         y: 19
-        width: 18
+        width: 17
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -85,18 +85,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 656
-        y: 17
-        width: 222
-        height: 431
+        y: 18
+        width: 221
+        height: 429
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_5
       rect:
         serializedVersion: 2
-        x: 891
-        y: 56
-        width: 18
-        height: 29
+        x: 892
+        y: 57
+        width: 17
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_6
@@ -104,17 +104,17 @@ TextureImporter:
         serializedVersion: 2
         x: 998
         y: 52
-        width: 33
+        width: 32
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_7
       rect:
         serializedVersion: 2
-        x: 1064
+        x: 1065
         y: 26
-        width: 36
-        height: 63
+        width: 34
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_8
@@ -123,43 +123,43 @@ TextureImporter:
         x: 1151
         y: 23
         width: 20
-        height: 123
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_9
       rect:
         serializedVersion: 2
         x: 1322
-        y: 59
-        width: 13
-        height: 65
+        y: 33
+        width: 50
+        height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: noir_assets_10
       rect:
         serializedVersion: 2
-        x: 891
-        y: 21
-        width: 18
-        height: 31
+        x: 892
+        y: 22
+        width: 17
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_11
       rect:
         serializedVersion: 2
-        x: 931
+        x: 932
         y: 19
-        width: 38
-        height: 29
+        width: 36
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: noir_assets_12
       rect:
         serializedVersion: 2
         x: 998
-        y: 20
-        width: 33
-        height: 28
+        y: 21
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

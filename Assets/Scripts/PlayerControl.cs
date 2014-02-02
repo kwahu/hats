@@ -141,7 +141,7 @@ public class PlayerControl : MonoBehaviour
 	void FireBomb ()
 	{
 		GameObject obj = (GameObject)Instantiate (Resources.Load ("bomb"), transform.position, Quaternion.Euler (0, 0, 0));
-		obj.rigidbody2D.AddForce (new Vector2 (0, -100));
+		obj.rigidbody2D.AddForce (new Vector2 (0, -10));
 	}
 	
 	/*	public IEnumerator Taunt ()

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class sight : MonoBehaviour {
 
-	public float sight_dist = 3;
+	float sight_dist = 1f;
 
 	// Use this for initialization
 	void Start () {

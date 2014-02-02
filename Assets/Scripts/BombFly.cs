@@ -17,7 +17,7 @@ public class BombFly : MonoBehaviour {
 	void Update () {
 		count += Time.deltaTime/2;
 
-		this.transform.localScale = new Vector3( Mathf.Lerp(10,1,count), Mathf.Lerp(10,1,count), 0);
+		this.transform.localScale = new Vector3( Mathf.Lerp(1,0.1f,count), Mathf.Lerp(1,0.1f,count), 0);
 
 		if(count > 1)
 		{
